@@ -26,6 +26,9 @@
 $(document).ready(function(){
   $("form#runeForm").submit(function(event){
     event.preventDefault();
+    $(".runeCard").hide();
+    $("#runeForm").hide();
+    $("#infoText").hide();
     let runes = ['fehu', 'uruz', 'thurisaz', 'ansuz', 'raido', 'kenaz', 'gebo', 'wunjo', 'hagalaz', 'natuhiz', 'isa', 'jera', 'eihwaz', 'perthro', 'algiz', 'sowulo', 'teiwaz', 'berkana', 'ehwaz', 'mannaz', 'laguz', 'inguz', 'othila', 'dagaz']
 
     // let yourRune = 'fehu'
