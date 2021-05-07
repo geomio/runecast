@@ -26,14 +26,29 @@
 $(document).ready(function(){
   $("form#runeForm").submit(function(event){
     event.preventDefault();
-    $("#fehu").show();
-    $("#algizReversed").show();
+    let runes = ['fehu', 'uruz', 'thurisaz', 'ansuz', 'raido', 'kenaz', 'gebo', 'wunjo', 'hagalaz', 'natuhiz', 'isa', 'jera', 'eihwaz', 'perthro', 'algiz', 'sowulo', 'teiwaz', 'berkana', 'ehwaz', 'mannaz', 'laguz', 'inguz', 'othila', 'dagaz']
+
+    // let yourRune = 'fehu'
+    let yourRune = (runes[Math.floor(Math.random() * runes.length)]);
+    // if (something is true) {
+    //   yourRune = yourRune + "Reversed"
+    // }
+    // // yourRune now === fehuReversed
+
+    $(`#${yourRune}`).show();
   });
 });
 
+// runes[Math.random()*12]
+// let reverseRune = []
+
+// x = 1.8
+// Math.ceil(x) // 2
+// Math.floor(x) // 1
+
 //to re value forme input areas
 //have input values
-//in form there are four areas maybe have one area = multiplyer one = addition one = subtract and one can be for an additonal add 
+//in form there are four areas maybe have one area = multiplyer one = addition one = subtract and one can be for an additional add 
 //line above:or what fits
 //total sum let that will hold combined values
 //need array for runes
