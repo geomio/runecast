@@ -22,7 +22,8 @@
 // let rune22 = 'inguz'
 // let rune23 = 'othilla'
 // let rune24 = 'dagaz'
-
+let chance = [1,2]
+let reverser = (chance[Math.floor(Math.random() * chance.length)]);
 $(document).ready(function(){
   $("form#runeForm").submit(function(event){
     event.preventDefault();
@@ -33,7 +34,7 @@ $(document).ready(function(){
 
     // let yourRune = 'fehu'
     let yourRune = (runes[Math.floor(Math.random() * runes.length)]);
-    // if (something is true) {
+    // if (reverser === 0) {
     //   yourRune = yourRune + "Reversed"
     // }
     // // yourRune now === fehuReversed
