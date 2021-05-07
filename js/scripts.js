@@ -27,5 +27,18 @@ $(document).ready(function(){
   $("form#runeForm").submit(function(event){
     event.preventDefault();
     $("#fehu").show();
+    $("#algizReversed").show();
   });
 });
+
+//to re value forme input areas
+//have input values
+//in form there are four areas maybe have one area = multiplyer one = addition one = subtract and one can be for an additonal add 
+//line above:or what fits
+//total sum let that will hold combined values
+//need array for runes
+//need array for reversed runes that will vs out over the rune array and show either the reverse rune or rune
+//or have it tagged somehow as rune or opposite rune(maybe there is a loop that finds 1 out of 24 runes then a 50 50 chance to reverse the rune instead)
+//after working css to straighten things
+//css for style
+//text for card areas
