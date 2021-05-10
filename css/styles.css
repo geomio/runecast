@@ -1,8 +1,28 @@
 .runeCard{
     display: none;
+    padding: 1px;
+    margin: 1px;
+    border-radius: 4px;
 }
+
+.panel{
+    background-image: none;
+    background: rgba(45, 44, 58, 0.8);
+}
+
+#pan1{
+    background: snow;
+}
+
+#pan2{
+    background: rgb(235, 208, 187);
+}
+
 .container{
     margin: auto;
     width: 50%;
     text-align: center;
+}
+.runeImg{
+    border-radius: 10px;
 }

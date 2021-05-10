@@ -1,0 +1,1 @@
+*readme not yet done art by gm, and code by gm music is cc0 from freesounds olver*
