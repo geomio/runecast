@@ -30,6 +30,14 @@ $(document).ready(function(){
     $(".runeCard").hide();
     $("#runeForm").hide();
     $("#infoText").hide();
+    $("input:checkbox[name=time]:checked").each(function(){
+    });
+    $("input:checkbox[name=color]:checked").each(function(){
+    });
+    $("input:checkbox[name=day]:checked").each(function(){
+    });
+    $("input:checkbox[name=animal]:checked").each(function(){
+    });
     let runes = ['fehu', 'uruz', 'thurisaz', 'ansuz', 'raidho', 'kenaz', 'gebo', 'wunjo', 'hagalaz', 'nauthiz', 'isa', 'jera', 'eihwaz', 'perthro', 'algiz', 'sowilo', 'tiwaz', 'berkano', 'ehwaz', 'mannaz', 'laguz', 'ingwaz', 'othala', 'dagaz']
 
     // let yourRune = 'fehu'
