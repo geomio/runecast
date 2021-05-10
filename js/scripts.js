@@ -30,7 +30,7 @@ $(document).ready(function(){
     $(".runeCard").hide();
     $("#runeForm").hide();
     $("#infoText").hide();
-    let runes = ['fehu', 'uruz', 'thurisaz', 'ansuz', 'raido', 'kenaz', 'gebo', 'wunjo', 'hagalaz', 'natuhiz', 'isa', 'jera', 'eihwaz', 'perthro', 'algiz', 'sowulo', 'teiwaz', 'berkana', 'ehwaz', 'mannaz', 'laguz', 'inguz', 'othila', 'dagaz']
+    let runes = ['fehu', 'uruz', 'thurisaz', 'ansuz', 'raidho', 'kenaz', 'gebo', 'wunjo', 'hagalaz', 'nauthiz', 'isa', 'jera', 'eihwaz', 'perthro', 'algiz', 'sowilo', 'tiwaz', 'berkano', 'ehwaz', 'mannaz', 'laguz', 'ingwaz', 'othala', 'dagaz']
 
     // let yourRune = 'fehu'
     let yourRune = (runes[Math.floor(Math.random() * runes.length)]);
