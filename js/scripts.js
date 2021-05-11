@@ -31,46 +31,42 @@ $(document).ready(function(){
     $("#runeForm").hide();
     $("#infoText").hide();
     
-    let sum2 = 2;
-    let sum3 = 3;
-    let sum4 = 4;
-    let rollAmmount = sum1 + sum2 + sum3 + sum4;
+    let time1 = 0;
+    let color1 = 0;
+    let day1 = 0;
+    let animal1 = 0;
+
+  
     $("input:checkbox[name=time]:checked").each(function(){
-      let sum1 = $("input:checkbox[name=time]:checked").parseInt(time);
+      let time = $(this).val();
+      time1 += parseInt(time);
     });
+    console.log(time1)
     $("input:checkbox[name=color]:checked").each(function(){
-      let sum2 = $("input:checkbox[name=color]:checked").parseInt(color);
-      parseInt(value);
+      let color = $(this).val();
+      color1 += parseInt(color);
     });
     $("input:checkbox[name=day]:checked").each(function(){
-      let sum3 = $("input:checkbox[name=day]:checked").parseInt(day);
-      parseInt(value);
+      let day = $(this).val();
+      day1 += parseInt(day);
     });
     $("input:checkbox[name=animal]:checked").each(function(){
-      let sum4 = $("input:checkbox[name=animal]:checked").parseInt(animal);
-      parseInt(value);
+      let animal = $(this).val();
+      animal1 += parseInt(animal);
     });
+
+    let rolls = time1  + color1 + day1 + animal1;
+    console.log(rolls);
+
     let runes = ['fehu', "fehuReverse", 'uruz', "uruzReverse", 'thurisaz', "thurisazReverse", 'ansuz', "ansuzReverse", 'raidho', "raidhoReverse", 'kenaz', "kenazReverse", 'gebo', 'wunjo', "wunjoReverse", 'hagalaz', 'nauthiz', "nauthizReverse", 'isa', 'jera', 'eihwaz', "eihwazReverse", 'perthro', "perthroReverse", 'algiz', "algizReversed", 'sowilo', 'tiwaz', "tiwazReverse", 'berkano', "berkanoReversed", 'ehwaz', "ehwazReverse", 'mannaz', "mannazReverse", 'laguz', "laguzReverse", 'ingwaz', 'othala', "othalaReverse", 'dagaz']
-    let yourRune = (runes[Math.floor(Math.random() * runes.length)]);
+    for (let index = 1; index <= rolls; index++) {
+      if (index === rolls) {
+        //checks conditions of parentheses
+      }
+    }
+
+    // let yourRune = (runes[Math.floor(Math.random() * runes.length)]);
+
     $(`#${yourRune}`).show();
   });
 });
-
-// runes[Math.random()*12]
-// let reverseRune = []
-
-// x = 1.8
-// Math.ceil(x) // 2
-// Math.floor(x) // 1
-
-//to re value forme input areas
-//have input values
-//in form there are four areas maybe have one area = multiplyer one = addition one = subtract and one can be for an additional add 
-//line above:or what fits
-//total sum let that will hold combined values
-//need array for runes
-//need array for reversed runes that will vs out over the rune array and show either the reverse rune or rune
-//or have it tagged somehow as rune or opposite rune(maybe there is a loop that finds 1 out of 24 runes then a 50 50 chance to reverse the rune instead)
-//after working css to straighten things
-//css for style
-//text for card areas
