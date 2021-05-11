@@ -22,31 +22,36 @@
 // let rune22 = 'inguz'
 // let rune23 = 'othilla'
 // let rune24 = 'dagaz'
-let chance = [1,2]
-let reverser = (chance[Math.floor(Math.random() * chance.length)]);
+// let chance = [1,2]
+// let reverser = (chance[Math.floor(Math.random() * chance.length)]);
 $(document).ready(function(){
   $("form#runeForm").submit(function(event){
     event.preventDefault();
     $(".runeCard").hide();
     $("#runeForm").hide();
     $("#infoText").hide();
+    
+    let sum2 = 2;
+    let sum3 = 3;
+    let sum4 = 4;
+    let rollAmmount = sum1 + sum2 + sum3 + sum4;
     $("input:checkbox[name=time]:checked").each(function(){
+      let sum1 = $("input:checkbox[name=time]:checked").parseInt(time);
     });
     $("input:checkbox[name=color]:checked").each(function(){
+      let sum2 = $("input:checkbox[name=color]:checked").parseInt(color);
+      parseInt(value);
     });
     $("input:checkbox[name=day]:checked").each(function(){
+      let sum3 = $("input:checkbox[name=day]:checked").parseInt(day);
+      parseInt(value);
     });
     $("input:checkbox[name=animal]:checked").each(function(){
+      let sum4 = $("input:checkbox[name=animal]:checked").parseInt(animal);
+      parseInt(value);
     });
-    let runes = ['fehu', 'uruz', 'thurisaz', 'ansuz', 'raidho', 'kenaz', 'gebo', 'wunjo', 'hagalaz', 'nauthiz', 'isa', 'jera', 'eihwaz', 'perthro', 'algiz', 'sowilo', 'tiwaz', 'berkano', 'ehwaz', 'mannaz', 'laguz', 'ingwaz', 'othala', 'dagaz']
-
-    // let yourRune = 'fehu'
+    let runes = ['fehu', "fehuReverse", 'uruz', "uruzReverse", 'thurisaz', "thurisazReverse", 'ansuz', "ansuzReverse", 'raidho', "raidhoReverse", 'kenaz', "kenazReverse", 'gebo', 'wunjo', "wunjoReverse", 'hagalaz', 'nauthiz', "nauthizReverse", 'isa', 'jera', 'eihwaz', "eihwazReverse", 'perthro', "perthroReverse", 'algiz', "algizReversed", 'sowilo', 'tiwaz', "tiwazReverse", 'berkano', "berkanoReversed", 'ehwaz', "ehwazReverse", 'mannaz', "mannazReverse", 'laguz', "laguzReverse", 'ingwaz', 'othala', "othalaReverse", 'dagaz']
     let yourRune = (runes[Math.floor(Math.random() * runes.length)]);
-    // if (reverser === 0) {
-    //   yourRune = yourRune + "Reversed"
-    // }
-    // // yourRune now === fehuReversed
-
     $(`#${yourRune}`).show();
   });
 });
