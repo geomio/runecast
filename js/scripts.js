@@ -1,36 +1,11 @@
-// let rune1 = "fehu"
-// let rune2 = "uruz"
-// let rune3 = "thurisaz"
-// let rune4 = "ansuz"
-// let rune5 = 'raido'
-// let rune6 = 'kenaz'
-// let rune7 = 'Gebo'
-// let rune8 = 'wunjo'
-// let rune9 = 'hagalaz'
-// let rune10 = 'nauthiz'
-// let rune11 = 'isa'
-// let rune12 = "jera"
-// let rune13 = "eihwaz"
-// let rune14 = 'perthro'
-// let rune15 = 'algiz'
-// let rune16 = 'sowulo'
-// let rune17 = 'telwaz'
-// let rune18 = 'berkana'
-// let rune19 = 'ewaz'
-// let rune20 = 'mannaz'
-// let rune21 = 'laguz'
-// let rune22 = 'inguz'
-// let rune23 = 'othilla'
-// let rune24 = 'dagaz'
-// let chance = [1,2]
-// let reverser = (chance[Math.floor(Math.random() * chance.length)]);
 $(document).ready(function(){
   $("form#runeForm").submit(function(event){
     event.preventDefault();
     $(".runeCard").hide();
     $("#runeForm").hide();
     $("#infoText").hide();
-    
+    var audio = new Audio("runes/runepics/audio/magicwand.wav");
+    audio.play();
     let time1 = 0;
     let color1 = 0;
     let day1 = 0;
@@ -41,7 +16,6 @@ $(document).ready(function(){
       let time = $(this).val();
       time1 += parseInt(time);
     });
-    console.log(time1)
     $("input:checkbox[name=color]:checked").each(function(){
       let color = $(this).val();
       color1 += parseInt(color);
@@ -67,6 +41,6 @@ $(document).ready(function(){
 
     // let yourRune = (runes[Math.floor(Math.random() * runes.length)]);
 
-    $(`#${yourRune}`).show();
+    // $(`#${yourRune}`).show();
   });
 });
